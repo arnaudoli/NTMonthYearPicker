@@ -395,6 +395,7 @@ numberOfRowsInComponent:(NSInteger)component {
 
 - (void)initCommon {
     self.frame = _pickerView.frame;
+    _pickerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _pickerView.pickerDelegate = self;
     [self addSubview:_pickerView];
 }
